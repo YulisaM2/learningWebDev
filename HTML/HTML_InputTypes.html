@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Other input types...</title>
+</head>
+<body>
+
+	<h1> Previously on trying to create forms... </h1>
+	<p> Already tried email, password and text, now we are going to use <em>radio, select</em> and <em>textarea</em> tags</p>
+
+	<h2> Radio </h2>
+	<p> Once selected can not be unselected, used when user has only one choice </p>
+	<input type="radio">
+
+	<h4>Example</h4>
+	<p>With which hand do you type faster?</p>
+	<form>
+		<label>
+			Right
+			<input type="radio" value="right" name="handOption">
+		</label>
+		<label>
+			Left
+			<!-- Using the same name for both buttons connects them to same area, thus only one can be picked by user -->
+			<input type="radio" value="left" name="handOption">
+		</label>
+		<!-- Once choice is selected and the button is pressed, the value will be sent on the request -->
+		<button>Vote!</button>
+	</form>
+
+	<h2> Checkbox </h2>
+	<p> Can be unselected, normally used for multiple option questions</p>
+
+	<h4>Example</h4>
+	<p>What do you like to do on you spare time?</p>
+
+	<form>
+		<label>
+			Read
+				<input type="Checkbox" value="read" name="spareTime">
+		</label>
+		<label>
+			Code
+				<input type="Checkbox" value="code" name="spareTime">
+		</label>
+		<label>
+			Sleep
+				<input type="Checkbox" value="sleep" name="spareTime">
+		</label>
+		<button>Vote!</button>
+	</form>
+	
+
+
+	<h2> Select & Option </h2>
+	<p> Creates a drop down menu with different options</p>
+	<form>
+		<select name="selectedOption">
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+			<option value="both">Both</option>
+			<option value="none">None</option>
+		</select>
+		<button>Vote!</button>
+	</form>
+	
+	<h2> Textarea </h2>
+	<p> So the user can enter larger text than in an input text element, like a descriptive bio </p>
+	
+	<h4>Example</h4>
+	<form>
+		<label>
+		<p>What's on your mind today?</p>
+			<textarea name ="bio"rows="3" cols="100"></textarea>
+		</label>
+		<button>Submit</button>
+	</form>
+	
+
+</body>
+</html>

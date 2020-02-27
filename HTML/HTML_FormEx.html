@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first Register Page</title>
+</head>
+<body>
+
+	<h1>Register, please :)</h1>
+
+	<form>
+		<div>
+			<label>
+				First Name:
+				<input type="text" name="first_name" placeholder="your first name" required>
+			</label>
+			<label>
+				Last Name:
+				<input type="text" name="last_name" placeholder="your last name" required>
+			</label>
+		<!-- For line breaks -->
+		</div>
+		
+		<div>
+			<!-- Register gender option if prefered -->
+			<label>
+				Man
+				<input type="radio" name="gender" value="man">
+			</label>
+			<label>
+				Woman
+				<input type="radio" name="gender" value="woman">
+			</label>
+			<label>
+				Non-binary
+				<input type="radio" name="gender" value="non-binary">
+			</label>
+			<label>
+				Other
+				<input type="radio" name="gender" value="other">
+			</label>
+			<label>
+				Prefer not to disclose
+				<input type="radio" name="gender" value="prefer_not_to_discolse">
+			</label>
+		</div>
+
+		<div>
+			<!-- Ask for email and password, and validate their type and length (password must be from 5 to 10 chars) -->
+			<label>
+				E-mail
+				<input type="email" name="email" placeholder="user@gmail.com" required>
+			</label>
+			<label>
+				Password
+				<input type="password" name="password" placeholder="password" pattern=".{5,10}" required title="Password must be between 5 to 10 characters long">
+			</label>
+		</div>
+
+		<div>
+			<!-- Example of a drop down menu for dates, not completed, just for practicing purposes -->
+			<label>
+				Birthday
+				<select name="month">
+					<option value="0">Month</option>
+					<option value="1">January</option>
+					<option value="2">February</option>
+					<option value="3">March</option>
+				</select>
+				<select name="day">
+					<option value="0">Day</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+				<select name="year">
+					<option value="0">Year</option>
+					<option value="1997">1997</option>
+					<option value="1998">1998</option>
+					<option value="1999">1999</option>
+				</select>
+			</label>
+		</div>
+			
+		<div>
+			<label>
+				I have read and agree to the terms and conditions
+				<input type="Checkbox" name="agree_to_terms" value="true" required>
+			</label>
+
+		</div>
+			
+		<button>Register</button>
+	</form>
+
+</body>
+</html>

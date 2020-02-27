@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first Login Page</title>
+</head>
+<body>
+	<h1>Welcome, fellow programmer!</h1>
+	<h2>Care to Login?</h2>
+
+	<!-- Using form container (action is direction where the data is sent, while method is the http request, if they are not specified, action = this page, method = get) -->
+	<form>
+		<!-- Labels are used for identification, here are 2 ways to use them -->
+		<label>
+			E-mail:
+			<!-- Required attribute is to validate that username was filled before submition, otherwise emit a simple alert (is not supported on every browser)
+				in this case if the data entered does not seem to be an email address, it will alert user of incorrect data type-->
+			<input type="email" placeholder="user@gmail.com" required>
+		</label>
+		<!-- Label for value and input id value must match for them to be linked-->
+		<label for="password">
+			Password:
+		</label>
+		<input id="password" type="password" placeholder="password" required>
+		<button>Submit</button>
+	</form>
+
+	<p>Come here often?</p>
+
+	<!-- With the name attribute, the header of the page will add the data as a jquery, each attribute separated by &s (not that safe for this example)-->
+	<!-- <form>
+		<input type="text" placeholder="username" name="username">
+		<input type="password" placeholder="password" name="password">
+		<button>Submit</button>
+	</form> -->
+
+	<!-- Other types of input tags are
+		<input type="color">
+		<input type="radio">
+	-->
+
+</body>
+</html>

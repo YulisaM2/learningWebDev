@@ -1,0 +1,14 @@
+li{
+	border: 2px brown dotted;
+}
+
+/*To reference a special element use its id (we can only use 1 per page but we can have multiples in a single page)*/
+#sleep{
+	color: orange
+}
+
+/*To reference a class use . and apply properties to every element from said class*/
+.classExample{
+	background : yellow;
+	text-decoration: line-through;
+}

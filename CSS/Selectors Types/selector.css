@@ -1,0 +1,27 @@
+/*Some examples of important selectors include:*/
+
+/*Everything (star)*/
+/** {
+	color : purple;
+}*/
+
+/*Descendant (everything nested within the parameters inherits the same properties)*/
+li a {
+	border: 2px dotted green;
+}
+
+/*Adjacent (those after the parameter)*/
+h4 + ul{
+	border: 4px solid red;
+}
+
+/*Attribute (the attributes from the element specified)*/
+a[href="http://www.google.com"]{
+	background: orange;
+}
+
+/* nth of type (applied only to nth element of said type)*/
+
+li:nth-of-type(2){
+	background: gray;
+}

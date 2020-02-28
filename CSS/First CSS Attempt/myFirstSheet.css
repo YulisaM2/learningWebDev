@@ -1,0 +1,26 @@
+h1{
+	color : red;
+	/*For borders we need the following 3 properties to be defined */
+	/*border-color: rgba(101,67,33,0.56);
+	border-width: 3px;
+	Styles include dotted solid double etc
+	border-style: double;*/
+
+	border: 3px double rgba(101,67,33,0.56);
+}
+
+h4{
+	color : white;
+	background: rgb(0,0,0);
+}
+
+li{
+	color : gray;
+}
+
+body{
+	background: #FFDDAA
+	/*background: url(https://inhabitat.com/wp-content/blogs.dir/1/files/2018/02/wood-889x593.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;*/
+}

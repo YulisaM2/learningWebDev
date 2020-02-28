@@ -1,0 +1,18 @@
+/*ils are blue as they inherit this property from their father, the ul*/
+body{
+	background: gray;
+}
+
+ul{
+	color: blue
+}
+#howudoin{
+	color: orange
+}
+.no{
+	color: pink;
+}
+
+/*We can have multiple properties being applied to a same family of elements (causing conflicts), so we must acknowledge Specifity*/
+
+/*Priority for specificity ordered from least to greatest: Selectors, classes and attributes, ids*/

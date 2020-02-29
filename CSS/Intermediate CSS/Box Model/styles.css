@@ -1,0 +1,23 @@
+p{
+	/*Relative to parent element (size becomes dynamic)*/
+	width: 50%;
+	/*width: 200px;*/
+/*	height: 100px;
+*/	border: 2px solid black;
+
+/*Space between the content and border*/
+	/*padding: 10px;*/
+	padding-left: 200px;
+
+	/*Space between the border and elements outside*/
+	/*margin: 100px;*/
+
+	/*in order top right bottom left*/
+	/*margin: 20px 40px 100px 230px;*/
+
+	/* Auto willcenter it*/
+	/*margin: 0 auto 0 auto;*/
+
+	/*This sintax means top/bottom left/right*/
+	margin: 0 auto;
+}

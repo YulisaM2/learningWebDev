@@ -1,0 +1,22 @@
+img{
+	/*Each image will take up 30% of the body, so there will be only 3 per row*/
+	width: 30%;
+	/*Float makes the flow of elements change, by making it left we can stack them together facing left as oppose of each image breaking line*/
+	float: left;
+
+	/*Considering that we have | 1| | 2| | 3|, we can see that we will have 6 borders per line touching (horizontally) so if we want to space them we do: */
+	/*10 percent of space left (30 per image taken, 90 total) divided evenly between 6 = 1.66% for spacing*/
+	margin: 1.66%;
+}
+p{
+	font-family: Raleway;
+	margin-left: 1.66%;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	/*To create the ilussion of having a line underneath the title that is aligned with the 1st image*/
+	border-bottom: 2px solid #F1F1F1;
+	width: 30%;
+	padding-bottom: 15px;
+}

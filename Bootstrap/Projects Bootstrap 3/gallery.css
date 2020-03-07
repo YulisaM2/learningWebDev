@@ -1,0 +1,28 @@
+body{
+	/*Size of the navbar, so content does not overlap with it*/
+	padding-top: 70px;
+}
+.jumbotron{
+	color: #2c3e50;
+	background: #ecf0f1;
+}
+
+/*Overriding command so that color changes to this blue*/
+.navbar-inverse{
+	background: #2c3e50;
+}
+
+/* Due to specificity, using this so that we can change the color of the anchored tags (listed) on the navbar to white*/
+/* Used inspect element to view where the conflict was and obtain this handle*/
+.navbar-inverse .navbar-nav>li>a{
+	color: white;
+}
+
+/*Same thing but with the brand element*/
+.navbar-inverse .navbar-brand{
+	color: white;
+}
+/* To change the icon's size we use font-size*/
+/*.fa{
+	font-size: 75px;
+}*/

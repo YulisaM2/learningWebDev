@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NavBar Go!</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body>
+	<h1>NavBars Intro</h1>
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+
+			<div class="navbar-header">
+				
+				<!-- Creating the iconic Navbar by targeting the elements under the bs-nav-demo id -->
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+				        <span class="sr-only">
+				        	Toggle navigation
+				        </span>
+				        <!-- These 3 are only to create the 3 lines look on the icon -->
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			      </button>
+
+				<a href="#" class="navbar-brand">
+					Hilia
+				</a>
+			</div>
+
+			<!-- Issues that will be on the dropdown of the Navbar list once the size of the screen is too small -->
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="#">
+							About
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Contact
+						</a>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#">
+							Sign Up
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Login
+						</a>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</nav>
+
+	<!-- JQuery and JS added so Navbar functionality can be tested -->
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

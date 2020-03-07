@@ -1,0 +1,69 @@
+/*Method 1: Alone practice time!*/
+/*h2{
+	font-size: 30px;
+	margin-left: 20px;
+
+}
+
+body{
+	font-family: Source Sans Pro;
+	margin-top: 15px;
+	margin-left: 20%;
+	margin-right: 20%;
+	border: 20px solid #BDC3C7;
+}
+
+p{
+	margin: 10px 20px;
+}
+
+.firstPar{
+	border-left: 4px solid #BDC3C7;
+	padding-left: 5px;
+}
+
+.date{
+	color: #3498DB;
+	text-transform: uppercase;
+	font-weight: bolder;
+	letter-spacing: 0.4em;
+	margin:20px 20px;
+}
+
+hr{
+	margin: 20px 20px;
+	border-top: 1px solid #BDC3C7;
+}*/
+
+body{
+	border: 20px solid #BDC3C7;
+	padding: 20px;
+	/*Max with limits the width the element can have*/
+	max-width: 700px;
+	/*Make it 80% when it needs to (when the page shrinks)*/
+	width: 80%;
+	margin: 20px auto;
+	font-family: Source Sans Pro;
+}
+
+.firstPar{
+	border-left: 5px solid #BDC3C7;
+	padding: 5px;
+}
+
+.date{
+	color: #3498DB;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+
+h2{
+	font-size: 2.0rem;
+}
+
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}

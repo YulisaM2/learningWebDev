@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>FLEXBOX</title>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center display-4"> 
+			Flexbox
+		</h1>
+		<!-- Using flexbox tu distribute content in div -->
+		<!-- These properties can be responsive (change property variation depending on screen size) -->
+		<!-- Justify can be end, start, between (space free between content) and around (space distributed evenly between and around)-->
+		 <!-- Align is used to distribute from top to bottom (can be used to avoid stretching content)-->
+		<div class="border border-dark d-flex justify-content-start align-items-end" style="height: 200px">
+			<button class="btn btn-info btn-lg">
+				LARGE
+			</button>
+			<button class="btn btn-primary">
+				MEDIUM
+			</button>
+			<button class="btn btn-warning">
+				SMALL
+			</button>
+		</div>
+
+		<!-- Using row reverse command, axis directions are reversed (now start is right and end is left) -->
+		<div class="border border-dark d-flex flex-row-reverse justify-content-start align-items-end" style="height: 200px">
+			<button class="btn btn-info btn-lg">
+				LARGE
+			</button>
+			<button class="btn btn-primary">
+				MEDIUM
+			</button>
+			<button class="btn btn-warning">
+				SMALL
+			</button>
+		</div>
+
+		<!-- Using column reverse command,  our main axis becomes y axis (so justify command affects this axis), while our secondary axis would be x axis -->
+		<div class="border border-dark d-flex flex-column justify-content-start align-items-end" style="height: 200px">
+			<button class="btn btn-info btn-lg">
+				LARGE
+			</button>
+			<button class="btn btn-primary">
+				MEDIUM
+			</button>
+			<button class="btn btn-warning">
+				SMALL
+			</button>
+		</div>
+
+		<!-- In addition to changing which is our main axis, now bottom is start and top is end -->
+		<div class="border border-dark d-flex flex-column-reverse justify-content-start align-items-end" style="height: 200px">
+			<button class="btn btn-info btn-lg">
+				LARGE
+			</button>
+			<button class="btn btn-primary">
+				MEDIUM
+			</button>
+			<button class="btn btn-warning">
+				SMALL
+			</button>
+		</div>
+
+		<h1 class="display-4 text-center"> 
+			Responsive Example
+		</h1>
+		<!-- Default is a column, except when medium size screen is reached, then it behaves as a row from that point onwards -->
+		<div class="d-flex flex-column flex-md-row justify-content-between">
+			<button class="btn btn-dark btn-lg">
+				First
+			</button>
+			<button class="btn btn-dark btn-lg">
+				Second
+			</button>
+			<button class="btn btn-dark btn-lg">
+				Third
+			</button>
+			<button class="btn btn-dark btn-lg">
+				Fourth
+			</button>
+			<button class="btn btn-dark btn-lg">
+				Fifth
+			</button>
+			<button class="btn btn-dark btn-lg">
+				Sixth
+			</button>
+		</div>
+	</div>
+
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

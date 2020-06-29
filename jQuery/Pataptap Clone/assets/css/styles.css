@@ -1,0 +1,11 @@
+canvas{
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+/* Making sure body makes up the whole page so canvas can work in the complete screen */
+body, html{
+    height: 100%;
+    margin: 0;
+}

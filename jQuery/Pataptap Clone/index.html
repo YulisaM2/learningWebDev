@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pataptap Clone</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <script type="text/javascript" src="assets/js/lib/paper-full.js"></script>
+    <script type="text/paperscript" canvas="myCanvas">
+        <!-- Create random point when any key is pressed -->
+        function onKeyDown(event){
+            var maxPoint = new Point(view.size.width, view.size.height);
+            var randomPoint = Point.random();
+            var point = maxPoint * randomPoint;
+            new Path.Circle(point,10).fillColor = "orange";
+        }
+    </script>
+</head>
+<body>
+
+    <script type="text/javascript" src="assets/js/lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/pataptap.js"></script>
+    <canvas id="myCanvas" resize></canvas>
+</body>
+</html>

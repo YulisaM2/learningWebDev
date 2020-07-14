@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+<h1>
+	You fell in love with: <%= thingVar %>
+</h1>
+	
+	<% if(thingVar.toLowerCase() === "corgis"){ %>
+		<p>
+			Honestly, same xD
+		</p>
+	<% } else{ %>
+		<p>
+			Okay, but have you considered Corgis?	
+		</p>
+	<% } %>
+
+<p>
+	P.S.: This is coming from the love.ejs file
+</p>
+<%- include('partials/footer') %>

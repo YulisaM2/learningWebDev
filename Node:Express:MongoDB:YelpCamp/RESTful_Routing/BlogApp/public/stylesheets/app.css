@@ -1,0 +1,14 @@
+/* Making the i elements of class icons 2x size of their parent element */
+i.icon{
+	font-size: 2em;
+}
+
+/* Adding margin to containers that are main class too, so that there's some space between navbar and them  */
+.container.main{
+	margin-top: 7em;
+}
+
+/* So buttons are inline in show page (forms are not inline by default) */
+#delete{
+	display: inline;
+}

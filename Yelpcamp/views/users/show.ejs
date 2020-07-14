@@ -1,0 +1,47 @@
+<%- include('../partials/header') %>
+<div class="row text-center">
+	<div class="col-sm-3" style="margin-bottom:30px; margin-top:20px">
+		<div class="card">
+			<img src="<%= user.avatar %>" alt="user profile image" style="width:100%; height:70%">
+			<div class="card-body">
+				<h1 class="card-title">
+					<%= user.firstName + " " + user.lastName %>
+				</h1>
+			</div>
+			<a href="#" class="card-text">
+				<%= user.email %>
+			</a>
+		</div>
+	</div>
+		<% if(campgrounds){ %>
+			<h1 style="margin-bottom:30px">
+				Their uploaded campgrounds
+			</h1>
+			<div style="display:flex; flex-wrap: wrap;">
+				<% campgrounds.forEach(function(campground){ %>
+					<div class="col-md-3 col-sm-6">
+						<div class="thumbnail">
+							<img src="<%= campground.image %>">
+							<div class="caption">
+								<h4>
+									<%= campground.name %>
+								</h4>
+							</div>
+							<p>
+								<a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">
+									More Info
+								</a>
+							</p>
+						</div>
+					</div>
+					<% }); %>
+			</div>
+		<% }else{ %>
+			<h1>
+				No campgrounds uploaded yet!	
+			</h1>
+		<% } %>
+</div>
+
+
+<%- include('../partials/footer') %>
